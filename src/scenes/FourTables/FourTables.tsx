@@ -1,5 +1,6 @@
+import { Chat, Subtitle, Title } from 'widgets';
+
 import styles from './FourTables.module.scss';
-import { Subtitle, Title } from 'widgets';
 
 export const FourTables = () => {
   return (
@@ -8,6 +9,7 @@ export const FourTables = () => {
         <Title />
         <Subtitle />
       </header>
+      <Chat />
     </main>
   );
 };

@@ -2,3 +2,14 @@ body {
   margin: 0;
   font-family: 'Russo One', sans-serif;
 }
+
+$primary-color-100: rgb(204, 72, 0);
+
+$success-color-100: rgb(0, 128, 0);
+$error-color-100: rgb(255, 0, 0);
+
+
+.message-sender {
+  font-family: 'Russo One' !important;
+  font-size: 40px;
+}

@@ -7,7 +7,7 @@ import './App.scss';
 export const App = () => {
   return (
     <Routes>
-      <Route path='/4tables' element={<FourTables />}></Route>
+      <Route path='/stream-design/4tables' element={<FourTables />}></Route>
     </Routes>
   );
 };

@@ -6,4 +6,5 @@ import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
   plugins: [react(), tsconfigPaths(), svgr()],
+  base: '/stream-design'
 });

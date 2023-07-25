@@ -1,0 +1,16 @@
+@import '../../app/App.scss';
+
+.container {
+  padding-left: 10px;
+  margin-right: 20px;
+  background-color: $primary-color-100;
+}
+
+.subtitle {
+  padding: 0 5px;
+  margin-left: 5px;
+  background-color: $success-color-100;
+  &.error {
+    background-color: $error-color-100;
+  }
+}
