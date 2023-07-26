@@ -10,7 +10,7 @@ export const Subtitle = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setSlide((prev) => (prev === SliderSubtitle.length - 1 ? 0 : prev + 1));
-    }, 60000);
+    }, 20000);
 
     return () => {
       clearInterval(interval);

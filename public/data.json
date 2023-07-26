@@ -1,8 +1,8 @@
 {
-  "day": "50",
-  "bankroll": "€1000",
+  "day": "51",
+  "bankroll": "€2200",
   "limit": "€10",
-  "result": "+€100",
-  "profit": "-€90",
-  "rakeback": "+€10"
+  "result": "+€10",
+  "profit": "-€20",
+  "rakeback": "+€30"
 }

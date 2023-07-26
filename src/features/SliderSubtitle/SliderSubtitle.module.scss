@@ -18,7 +18,7 @@
 
   overflow: hidden;
 
-  animation: blind ease-in-out 60s infinite;
+  animation: blind ease-in-out 20s infinite;
 
   &::after {
     position: absolute;
@@ -46,10 +46,10 @@
   0% {
     width: 0;
   }
-  2% {
+  5% {
     width: 100%;
   }
-  96% {
+  90% {
     width: 100%;
   }
   100% {

@@ -6,23 +6,3 @@
   height: 580px;
   border: none;
 }
-
-#mountHere {
-  width: 500px;
-  color: red;
-}
-
-.message-item {
-  letter-spacing: 20px !important;
-}
-
-.chat-text-normal {
-  font-family: 'Russo One' !important;
-}
-
-.frame {
-  width: 500px;
-  & .chat-text-normal {
-    font-family: 'Russo One' !important;
-  }
-}
