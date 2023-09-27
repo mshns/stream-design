@@ -1,9 +1,15 @@
 body {
   margin: 0;
   font-family: 'Russo One', sans-serif;
+  overflow: hidden;
 }
 
-$primary-color-100: rgb(204, 72, 0);
+$primary: rgb(221, 109, 0);
+$secondary: rgb(68, 68, 68);
+$highlight: rgb(0, 217, 255);
 
-$success-color-100: rgb(0, 128, 0);
-$error-color-100: rgb(255, 0, 0);
+$primary-text: rgb(255, 255, 255);
+$secondary-text: rgb(255, 255, 255, 0.9);
+
+$success: rgb(0, 128, 0);
+$error: rgb(235, 34, 39);

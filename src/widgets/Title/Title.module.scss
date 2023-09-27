@@ -1,11 +1,14 @@
+@import '../../app/App.scss';
+
 .title {
   padding: 0 10px;
-  margin: 0 10px 0 0;
+  margin-right: 10px;
+  border-radius: 5px;
   font: {
     size: 32px;
     weight: 100;
   }
-  color: white;
-  background-color: #23a6d5;
+  color: $primary-text;
+  background-color: $highlight;
   transform: skew(-10deg);
 }

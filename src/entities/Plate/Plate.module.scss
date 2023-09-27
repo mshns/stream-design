@@ -2,15 +2,27 @@
 
 .container {
   padding-left: 10px;
-  margin-right: 20px;
-  background-color: $primary-color-100;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: $primary;
+}
+
+.container:last-child {
+  margin-right: 0px;
+}
+
+.title {
+  color: $secondary-text;
+  border-radius: 5px;
 }
 
 .subtitle {
-  padding: 0 5px;
-  margin-left: 5px;
-  background-color: $success-color-100;
+  padding: 2px 10px;
+  margin-left: 10px;
+  background-color: $success;
+  border-radius: 5px;
+
   &.error {
-    background-color: $error-color-100;
+    background-color: $error;
   }
 }

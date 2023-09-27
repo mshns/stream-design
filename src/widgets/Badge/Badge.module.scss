@@ -1,0 +1,67 @@
+.badge {
+  position: absolute;
+  left: 1453px;
+  top: 330px;
+  width: 461px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+
+  transform: skew(-10deg);
+
+  z-index: 1000;
+
+  & .title {
+    margin: 0;
+    padding: 0 10px;
+    width: 340px;
+    border-radius: 5px;
+    text-align: center;
+    font: {
+      size: 32px;
+      weight: 100;
+    }
+
+    color: red;
+    background-color: gold;
+  }
+
+  & .subtitle {
+
+    position: absolute;
+    left: 60px;
+    top: -14px;
+
+    text-align: center;
+    padding: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    font: {
+      size: 16px;
+      weight: 100;
+    }
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background-color: green;
+
+    animation: blind ease-in-out 20s infinite;
+  }
+}
+
+@keyframes blind {
+  0% {
+    width: 0;
+  }
+  60% {
+    width: 0;
+  }
+  70% {
+    width: 340px;
+  }
+  95% {
+    width: 340px;
+  }
+  100% {
+    width: 0;
+  }
+}
