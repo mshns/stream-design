@@ -1,67 +1,65 @@
+@import '../../app/App.scss';
+
 .badge {
   position: absolute;
-  left: 1453px;
+  left: 1483px;
   top: 330px;
-  width: 461px;
+  width: 400px;
   height: 40px;
-  display: flex;
-  justify-content: center;
-
+  border-radius: 5px;
+  background-color: $primary;
   transform: skew(-10deg);
-
+  overflow: hidden;
   z-index: 1000;
 
   & .title {
-    margin: 0;
-    padding: 0 10px;
-    width: 340px;
-    border-radius: 5px;
+    width: 100%;
     text-align: center;
+    margin: 0;
+    color: $primary-text;
     font: {
       size: 32px;
       weight: 100;
     }
-
-    color: red;
-    background-color: gold;
   }
 
   & .subtitle {
-
-    position: absolute;
-    left: 60px;
-    top: -14px;
-
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 92%;
+    height: 24px;
+    border-radius: 4px;
     text-align: center;
-    padding: 5px 0;
-    white-space: nowrap;
-    overflow: hidden;
+    padding: 4px 10px;
+    color: $secondary-text;
+    background-color: $secondary;
     font: {
-      size: 16px;
+      size: 20px;
       weight: 100;
     }
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    background-color: green;
-
-    animation: blind ease-in-out 20s infinite;
+    animation: rotate 60s infinite;
   }
 }
 
-@keyframes blind {
+@keyframes rotate {
   0% {
-    width: 0;
+    left: -200%;
   }
-  60% {
-    width: 0;
+  50% {
+    left: -200%;
   }
-  70% {
-    width: 340px;
+  52% {
+    left: 0;
+    right: 0;
   }
-  95% {
-    width: 340px;
+  98% {
+    right: 0;
   }
   100% {
-    width: 0;
+    right: -200%;
   }
 }
