@@ -1,0 +1,70 @@
+@import '../../app/App.scss';
+
+.donate {
+  position: absolute;
+  left: 1453px;
+  top: 540px;
+  width: 451px;
+  height: 40px;
+
+  border: 5px solid $secondary;
+
+  border-radius: 5px;
+
+  overflow: hidden;
+  z-index: 1000;
+
+  opacity: 1;
+
+  & .slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: rotate 60s infinite;
+
+    & .title {
+      width: 451px;
+      padding: 10px 0;
+      text-align: center;
+      color: $secondary-text;
+      font-size: 24px;
+      text-transform: uppercase;
+      background-color: $primary;
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: 0;
+  }
+  11% {
+    left: -100%;
+  }
+  50% {
+    left: -100%;
+  }
+  51% {
+    left: -200%;
+  }
+  60% {
+    left: -200%;
+  }
+  61% {
+    left: -100%;
+  }
+  99% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}

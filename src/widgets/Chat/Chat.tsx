@@ -5,6 +5,6 @@ export const Chat = () => {
     <iframe
       src={import.meta.env.VITE_RESTREAM_PROXY_URL}
       className={styles.chat}
-    ></iframe>
+    />
   );
 };

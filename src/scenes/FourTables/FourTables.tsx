@@ -1,4 +1,4 @@
-import { Badge, Banner, Chat, Subtitle, Title } from 'widgets';
+import { Badge, Banner, Chat, Donate, Subtitle, Title } from 'widgets';
 
 import styles from './FourTables.module.scss';
 
@@ -14,6 +14,7 @@ export const FourTables = () => {
       <Badge />
       <Chat />
       <Banner />
+      <Donate />
     </>
   );
 };

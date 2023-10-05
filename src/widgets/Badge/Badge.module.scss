@@ -41,7 +41,7 @@
       size: 20px;
       weight: 100;
     }
-    animation: rotate 60s infinite;
+    animation: rotate 80s infinite, blind 5s infinite;
   }
 }
 
@@ -49,17 +49,32 @@
   0% {
     left: -200%;
   }
-  50% {
+  75% {
     left: -200%;
   }
-  52% {
+  76% {
     left: 0;
     right: 0;
   }
-  98% {
+  99% {
     right: 0;
   }
   100% {
     right: -200%;
+  }
+}
+
+@keyframes blind {
+  0% {
+    color: $secondary;
+  }
+  10% {
+    color: $secondary-text;
+  }
+  90% {
+    color: $secondary-text;
+  }
+  100% {
+    color: $secondary;
   }
 }
