@@ -6,3 +6,10 @@ export interface IData {
   profit: string;
   rakeback: string;
 }
+
+export interface IWidget {
+  left: string;
+  top: string;
+  width: string;
+  height: string;
+}

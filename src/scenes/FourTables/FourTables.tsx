@@ -12,8 +12,9 @@ export const FourTables = () => {
         </header>
       </main>
       <Badge />
-      <Chat />
-      <Banner />
+      {/* <Chat /> */}
+      <Banner left='1453px' top='376px' width='461px' height='160px' />
+
       <Donate />
     </>
   );

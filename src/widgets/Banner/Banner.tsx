@@ -1,18 +1,22 @@
-import { ReactComponent as RedstarChip } from '../../shared/assets/svg/redstar-chip.svg';
-
+import { FC } from 'react';
 import styles from './Banner.module.scss';
+import { Background, Link, Title } from './components';
+import { IWidget } from 'shared';
 
-export const Banner = () => {
+export const Banner: FC<IWidget> = (widget) => {
   return (
-    <div className={styles.banner}>
-      <div className={styles.background}>
-        <RedstarChip className={styles.logo} />
-      </div>
-      <h3 className={styles.text}>
-        Рейкбэк до 35%
-        <br />и другие бонусы
-        <br /> на RedStar
-      </h3>
+    <div
+      className={styles.banner}
+      style={{
+        left: widget.left,
+        top: widget.top,
+        width: widget.width,
+        height: widget.height,
+      }}
+    >
+      <Background />
+      <Title />
+      <Link href={'storo08.ru/redstar'} command={'!redstar'} />
     </div>
   );
 };
