@@ -1,15 +1,21 @@
-import { ReactComponent as RedstarChip } from 'shared';
+import { FC } from 'react';
 
 import styles from './Background.module.scss';
 
-export const Background = () => {
+interface IBackground {
+  icon: string;
+}
+
+export const Background: FC<IBackground> = ({ icon }) => {
   return (
     <div className={styles.background}>
       <ul className={styles.circles}>
         {[...Array(10)].map((_item, index) => (
-          <li key={index}>
-            <RedstarChip className={styles.logo} />
-          </li>
+          <li
+            className={styles.icon}
+            style={{ backgroundImage: icon }}
+            key={index}
+          ></li>
         ))}
       </ul>
     </div>

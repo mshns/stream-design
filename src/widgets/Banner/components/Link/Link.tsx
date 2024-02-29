@@ -3,6 +3,7 @@ import { QRCodeSVG } from 'qrcode.react';
 import styles from './Link.module.scss';
 
 interface ILink {
+  url: string;
   href: string;
   command: string;
 }
@@ -10,7 +11,7 @@ interface ILink {
 export const Link: FC<ILink> = (link) => {
   return (
     <div className={styles.link}>
-      <QRCodeSVG value={'https://' + link.href} />
+      <QRCodeSVG value={link.url} />
       <div className={styles.container}>
         <h3 className={styles.href}>{link.href}</h3>
         <h5 className={styles.description}>
